@@ -36,7 +36,7 @@ all: driver_HDMI.elf secondary-outputs
 driver_HDMI.elf: $(OBJS) ../src/lscript.ld $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: MicroBlaze gcc linker'
-	mb-gcc -L"D:\WORKSPACE\FPGA\Final_Project_RTES\Final_Project_RTES.sdk\driver_HDMI\lib" -Wl,-T -Wl,../src/lscript.ld -L../../standalone_mb_0/mb0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mxl-multiply-high -Wl,--no-relax -o "driver_HDMI.elf" $(OBJS) $(USER_OBJS) $(LIBS)
+	mb-gcc -L"F:\Project\Github\AC701-DualMB-SW\SW\driver_HDMI\lib" -Wl,-T -Wl,../src/lscript.ld -L../../standalone_mb_0/mb0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mxl-multiply-high -Wl,--no-relax -o "driver_HDMI.elf" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
