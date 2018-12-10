@@ -97,10 +97,7 @@
 
 #define configUSE_STATS_FORMATTING_FUNCTIONS 1
 
-#define configNUM_THREAD_LOCAL_STORAGE_POINTERS 1
-
-#define INCLUDE_xTaskGetIdleTaskHandle 1
-
+#define configNUM_THREAD_LOCAL_STORAGE_POINTERS 0
 
 #define configUSE_TICKLESS_IDLE	0
 #define configTASK_RETURN_ADDRESS    NULL

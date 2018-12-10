@@ -133,7 +133,7 @@ void DDRVideoWr(unsigned short horizontalActiveTime,
 				backup = pixel;
 				while((pixel - line*horizontalActiveTime) < horizontalActiveTime)
 				{
-					Xil_Out32((VIDEO_BASEADDR+(pixel*4)), (IMG_DATA[index] & 0xffffff)); //IMG_DATA[index] & 0xffffff
+					Xil_Out32((VIDEO_BASEADDR+(pixel*4)), (0x000000)); //IMG_DATA[index] & 0xffffff
 					pixel += 640;
 				}
 				pixel = backup;

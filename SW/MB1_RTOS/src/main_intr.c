@@ -17,7 +17,7 @@
 #define line_val 0x01f104
 #define val_bg 0x00
 #define TREE_NUM 4
-#define DEBOUNCE_ENA 0
+#define DEBOUNCE_ENA 1
 
 static void ButtonReadTask( void *pvParameters );
 static void vSetupGPIOInterrupt();
